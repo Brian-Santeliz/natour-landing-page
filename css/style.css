@@ -16,7 +16,10 @@ Dark green: #28b485
 /* Root Font-size */
 html{
   font-size: 62.5%;
-  /* 1rem === 10px */
+  /*
+    1rem === 10px
+    10px/16px  = 62.5%
+  */
 }
 body {
   font-family: "Lato" sans-serif;
@@ -42,16 +45,16 @@ body {
   position: relative;
 }
 /* Logo */
-.container-logo {
+.header__container-logo {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 /* Title header */
-.container-text {
+.header__container-text {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -64,20 +67,20 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
-.header-title-main {
+.header-title--main {
   display: block;
   font-weight: 400;
   font-size: 6rem;
   letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease-in-out;
-  /* 
+  /*
     animation-name
     animation-timing-function: ;
     animation-duration
     animation-durationg
     */
 }
-.header-title-sub {
+.header-title--sub {
   font-size: 2rem;
   display: block;
   font-weight: 400;
@@ -146,7 +149,7 @@ body {
   z-index: -1;
   transition:all .3s ease-out;
 }
-.btn-white{
+.btn--white{
   background-color:#fff;
   color: #777;
 }
@@ -155,11 +158,11 @@ body {
   transform: scaleX(1.2) scaleY(1.4);
 }
 
-.btn-white::after{
+.btn--white::after{
   background-color:#fff;
 }
 
-.btn-animated{
+.btn--animated{
   animation: movieInBottom .3s ease-in-out .8s;
   /* Hide element when animation start. */
   animation-fill-mode: backwards;
