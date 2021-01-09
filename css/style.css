@@ -154,6 +154,7 @@ body {
 
 .btn-animated{
   animation: movieInBottom .3s ease-in-out .8s;
+  /* Hide element when animation start. */
   animation-fill-mode: backwards;
 }
 @keyframes movieInBottom{
